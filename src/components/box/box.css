@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* default text */
+.App {
+  text-align: center;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.artist_flex_box{
+    position: absolute;
+    top:205px;
+    left:335px;
+    width: 1585px;
+    height: 930px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.art_box{
+    width: 260px;
+
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.art_box img{
+    width: 260px;
+    
+}
+
+.exhibition_4_flex{
+  position: absolute;
+  top:150px;
+  left:354px;
+  width:1561px;
+  height:930px;
+  display: flex;
+  flex-wrap: wrap;
+}
