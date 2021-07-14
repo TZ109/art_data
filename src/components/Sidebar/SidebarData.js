@@ -74,7 +74,18 @@ export const SidebarData = [
   {
     title: 'Aritist',
     path: '/artist',
-    icon: <BsIcons.BsCircleFill />
+    icon: <BsIcons.BsCircleFill />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: 'Aritist 1',
+        path: '/artist01',
+        icon: <BsIcons.BsCircleFill/>,
+        cName: 'sub-nav'
+      }
+    ]
   },
   {
     title: 'Artwork',

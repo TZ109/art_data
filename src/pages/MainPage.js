@@ -17,7 +17,7 @@ import Exhibition2 from '../components/exhibition/exhibition2';
 import Artist from '../components/box/Artist';
 import Exhibition3 from '../components/exhibition/exhibition3';
 import Artwork from '../components/box/Artwork';
-
+import Artist01 from '../components/box/Artist01';
 const Home = () =>{
     return(
         <div>
@@ -157,6 +157,7 @@ function MainPage(){
                 <Route path="/exhibition3" exact><Exhibition3></Exhibition3></Route>
                 <Route path="/artwork" exact><Artwork></Artwork></Route>
                 <Route path="/artist" exact><Artist></Artist></Route>
+                <Route path="/artist01" exact><Artist01></Artist01></Route>
                 <Route path="/" Component={Home} exact><Home></Home></Route>
                 <Route path="/loginPage"><LoginPage></LoginPage></Route>
                 
