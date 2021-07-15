@@ -1,8 +1,7 @@
 /* eslint-disable */
 import React,{useState} from 'react';
-import '../../App.css';
+import './ShowWindow.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-
 
 function ShowWindow1(props){
     return(

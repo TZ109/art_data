@@ -1,4 +1,4 @@
-import ShowWindow4 from "../components/showWindow/ShowWindow4";
+import ShowWindow4 from "../showWindow/ShowWindow4";
 import React, { Component } from "react";
 import Slider from "react-slick";
 
