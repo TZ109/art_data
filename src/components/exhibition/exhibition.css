@@ -64,7 +64,7 @@ body {
     border-radius: 15px;
 }
 
-.exhibition2_box img {
+.exhibition2_img {
     position: absolute;
     top: 40px;
     left: 250px;
@@ -134,10 +134,11 @@ body {
     width: 430px;
     height: 234px;
     border: none;
+    text-align: left;
     font: Noto Sans KR;
     font-size: 15px;
-
     background-color: #F9F9F9;
+    overflow:auto;
 }
 
 .exhibition2_textArea:focus {
@@ -269,22 +270,31 @@ body {
     flex-direction: row;
     margin-bottom: 15px;
     width: 528px;
+    
 }
 
 .body_rank {
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 37px;
     margin-right: 10px;
 }
 
 .body_art {
     margin-top: 10px;
-    width: 355px;
-    text-align: center;
+    margin-left: 40px;
+    width: 260px;
+    text-align: left;
+    
+}
+.body_art p{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .body_time {
     margin-top: 10px;
+    margin-left:45px;
 }
 
 .body_font {
@@ -371,7 +381,7 @@ body {
     border-radius: 15px;
 }
 
-.exhibition3_artwork_box img {
+.exhibition3_artwork_box_img {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -387,6 +397,9 @@ body {
     font-size: 30px;
     margin: 0px;
     text-align: right;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .artwork_box_arttype {
@@ -397,6 +410,9 @@ body {
     text-align: right;
     font-size: 24px;
     margin: 0px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .artwork_box_artsize {
@@ -409,6 +425,9 @@ body {
     font-family: Lato;
     margin: 0px;
     font-weight: 200;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .artwork_box_musium {
@@ -421,6 +440,9 @@ body {
     font-family: Lato;
     margin: 0px;
     font-weight: 200;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .exhibition3_people {
@@ -438,18 +460,25 @@ body {
 .exhibition3_people_title {
     font-size: 12px;
     color: #F9F9F9;
-    padding-left: 10px;
+    padding-left: 8px;
     font-family: Note Sans KR;
-    padding-top: 3px;
+    padding-top: 14px;
+    margin: 0px;
+    width:100px;
 }
 
 .exhibition3_people_number {
     font-size: 24px;
     color: #F9F9F9;
     font-family: Lato;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-top: 6px;
     margin: 0px;
+    width:80px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    text-align: right;
 
 }
 
@@ -478,9 +507,14 @@ body {
     font-size: 24px;
     color: #F9F9F9;
     font-family: Lato;
-    padding-right: 15px;
+    padding-right: 10px;
     padding-top: 6px;
     margin: 0px;
+    width:90px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    text-align: right;
 }
 
 .exhibition3_time_line {
@@ -516,6 +550,7 @@ body {
     text-align: left;
     font-size: 16px;
     font-weight: 700;
+    margin-top: 7px;
     margin-bottom: 7px;
     font-family: Noto Sans KR;
 }

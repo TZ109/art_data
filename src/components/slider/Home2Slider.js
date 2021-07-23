@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 
 export default class SimpleSlider extends Component {
+
+
   render() {
     var settings = {
       dots: true,
@@ -38,34 +40,13 @@ export default class SimpleSlider extends Component {
         }
       ]
     };
+    console.log('내부 데이터');
+    console.log(this.props.dataset);
     return (
       <div>
       
         <Slider {...settings}>
-          <div>
-            <ShowWindow4></ShowWindow4>
-          </div>
-          <div>
-          <ShowWindow4></ShowWindow4>
-          </div>
-          <div>
-          <ShowWindow4></ShowWindow4>
-          </div>
-          <div>
-          <ShowWindow4></ShowWindow4>
-          </div>
-          <div>
-          <ShowWindow4></ShowWindow4>
-          </div>
-          <div>
-          <ShowWindow4></ShowWindow4>
-          </div>
-          <div>
-          <ShowWindow4></ShowWindow4>
-          </div>
-          <div>
-          <ShowWindow4></ShowWindow4>
-          </div>
+          {this.props.dataset && this.props.dataset.map( data => <div><ShowWindow4 data={data}></ShowWindow4></div>)}
         </Slider>
       </div>
     );

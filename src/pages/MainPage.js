@@ -15,7 +15,9 @@ import Home3 from '../components/home/Home03';
 import Home4 from '../components/home/Home04';
 
 /* LoginPage Part */
+import MyPage from '../components/myPage/MyPage';
 import LoginPage from './LoginPage';
+import SignupPage from './signupPage';
 
 /* Exhibition Part */
 import Exhibition from '../components/exhibition/exhibition1';
@@ -29,6 +31,11 @@ import Artist01 from '../components/box/Artist01';
 /*Artwork Part*/
 import Artwork from '../components/box/Artwork';
 
+
+import Transfer from '../components/myPage/Transfer';
+
+import PrivateRoute from './PrivateRoute';
+import PublicRoute from './PublicRoute';
 
 function MainPage(){
 
@@ -55,8 +62,11 @@ function MainPage(){
                 <Route path="/artist" exact><Artist></Artist></Route>
                 <Route path="/artist01" exact><Artist01></Artist01></Route>
     
-                <Route path="/loginPage"><LoginPage></LoginPage></Route>
-                <Route path="/" Component={Home} exact><Home></Home></Route>
+                <PublicRoute exact path="/loginPage" restricted={true} component={LoginPage}></PublicRoute>
+                <PublicRoute path="/signupPage" restricted={true} component={SignupPage}></PublicRoute>
+                <PrivateRoute path="/myPage" component={MyPage}></PrivateRoute>
+                <PrivateRoute path="/transfer" component={Transfer}></PrivateRoute>
+                <Route path="/"  exact><Home></Home></Route>
             </Switch>            
         </div> 
         

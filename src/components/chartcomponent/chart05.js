@@ -1,56 +1,13 @@
 import React, { PureComponent } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import './chart.css'
-const data = [
-  {
-    name: '10',
-    'Day': 10,
-  },
-  {
-    name: '11',
-    'Day': 11,
-  },
-  {
-    name: '12',
-    'Day': 15,
-  },
-  {
-    name: '13',
-    'Day': 20,
-  },
-  {
-    name: '14',
-    'Day': 17,
-  },
-  {
-    name: '15',
-    'Day': 9,
-  },
-  {
-    name: '16',
-    'Day': 8,
-  },
-  {
-    name: '17',
-    'Day': 12,
-  },
-  {
-    name: '18',
-    'Day': 19,
-  },
-  {
-    name: '19',
-    'Day': 7,
-  }
-  
-];
 
-export default function Chart05(){
+export default function Chart05(props){
   
    
       return (
         <div>
-          <BarChart width={800} height={330} data={data}
+          <BarChart width={800} height={330} data={props.data}
             margin={{
               top: 80,
               right: 30,

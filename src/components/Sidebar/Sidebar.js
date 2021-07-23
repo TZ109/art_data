@@ -10,7 +10,7 @@ import { IconContext } from 'react-icons/lib';
 const Nav = styled.div`
   background: #15171c;
   position: fixed;
-  top:200px;
+  top:150px;
   width: 50px;
   height: 50px;
   border-radius: 0px 10px 10px 0px;
@@ -34,10 +34,10 @@ const SidebarNav = styled.nav`
   
   background: #15171c;
   position : fixed;
-  top:200px;
+  top:150px;
   width: 220px;
   border-radius: 0px 30px 0px 0px;
-  height: 810px;
+  height: 900px;
   display: flex;
   justify-content: center;
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};

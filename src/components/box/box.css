@@ -27,7 +27,7 @@ body{
   top:512px;
   width:524px;
   height:518px;
-  background: linear-gradient(to top,#F9F9F9 98%,#181818 2%);
+  background: linear-gradient(to top,#F9F9F9 99%,#181818 2%);
   border-radius: 15px 15px 15px 15px;
 }
 .exhibition_date_box{
@@ -71,10 +71,6 @@ body{
     margin-bottom: 100px;
 }
 
-.art_box img{
-    width: 260px;
-    
-}
 
 .exhibition_4_flex{
   position: absolute;
@@ -105,7 +101,7 @@ body{
   height: 949px;
   width:620px;
   border-radius: 15px;
-  background: linear-gradient(to top,#F9F9F9 98%,#181818 2%);
+  background: linear-gradient(to top,#F9F9F9 99%,#181818 1%);
 }
 
 .artist01_Artist_name{
@@ -113,9 +109,12 @@ body{
   top:45px;
   left:30px;
   text-align: left;
-  width:300px;
+  width:500px;
   font-size: 30px;
   margin: 0px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 .artist01_Artist_button{
   position: absolute;
@@ -131,11 +130,13 @@ body{
   left:30px;
   width:542px;
   height:358px;
-  border:0px;
+  border:none;
   background-color: #F9F9F9;
   font-family: Noto Sans KR;
   font-size: 14px;
   font-weight: lighter;
+  overflow:auto;
+  text-align: left;
 }
 
 .artist01_Artist_people{
@@ -156,13 +157,17 @@ body{
 .artist01_Artist_people_name{
   font-size: 12px;
   margin-left: 10px;
-  margin-top: 15px;
+  margin-top: 17px;
+  width:100px;
   font-family: Noto Sans KR;
 }
 .artist01_Artist_people_num{
   font-size:24px;
-  margin-top: 10px;
-  margin-right: 20px;
+  margin-top: 12px;
+  margin-right: 10px;
+  width:100px;
+  height:30px;
+  text-align: right;
   font-family: Lato;
 }
 
@@ -214,7 +219,7 @@ body{
   height:679px;
   width: 932px;
   border-radius: 15px;
-  background: linear-gradient(to top,#F9F9F9 98%,#181818 2%);
+  background: linear-gradient(to top,#F9F9F9 99%,#181818 1%);
 }
 
 .Fav_Art_slider{
@@ -242,7 +247,7 @@ body{
   width:410px;
   height:220px;
   border-radius: 15px;
-  background: linear-gradient(to top,#F9F9F9 98%,#181818 2%);
+  background: linear-gradient(to top,#F9F9F9 97%,#181818 3%);
 }
 
 .artist01_Artist_Old_graph{
@@ -282,7 +287,7 @@ body{
   font-size: 33px;
   margin: 0px;
   font-family: Lato;
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 .artist01_Art_Like_div{
@@ -292,7 +297,7 @@ body{
   width:400px;
   height:220px;
   border-radius: 15px;
-  background: linear-gradient(to top,#F9F9F9 98%,#181818 2%);
+  background: linear-gradient(to top,#F9F9F9 97%,#181818 3%);
 }
 
 .artist01_Art_Like_title{
@@ -305,13 +310,18 @@ body{
   font-weight: 600;
   margin: 0px;
 }
-
+.artist01_time_line{
+  position: absolute;
+  top: 835px;
+  left:340px;
+}
 .bar_state{
   position: absolute;
   top:160px;
   left:25px;
   width:350px;
+  background-color: #d0d0d0;
   height:20px;
   border-radius: 15px;
-
 }
+

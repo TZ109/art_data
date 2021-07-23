@@ -4,10 +4,10 @@ import '../../App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 
-function ShowWindow3(){
+function ShowWindow3(props){
     return(
         <div className="show_window3">
-            <img src="/img/picture.png" alt="그림" />
+            <Zoomimage image={props.data.img} size='335'></Zoomimage>
         </div>
     )
 

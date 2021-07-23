@@ -1,13 +1,13 @@
 import react from 'react';
 import '../../App.css';
+import Zoomimage from './Zoomimage';
 
 
-
-function ShowWindow5(){
+function ShowWindow5(props){
     return(
         <div className="show_window_5">
-            <img src="/img/picture.png" alt="그림" />
-            <p>Pablo Picasso : Portrait</p>
+            <Zoomimage image={props.data.img} size='450'></Zoomimage>
+            <p>{props.data.text}</p>
         </div>
     )
 }

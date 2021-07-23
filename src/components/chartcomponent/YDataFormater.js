@@ -7,7 +7,6 @@ class YDataFormater extends React.Component {
         const {x, y, payload} = this.props;
         let datatemp = payload.value.toString().split(':');
         datatemp[0] = datatemp[0] + " :";
-        console.log(datatemp[0]);
         return (
             <g transform={`translate(${x},${y})`}>
                 <text x={-60} y={-20} dy={14} textAnchor="middle" fill="#505050" fontSize={13}>{datatemp[0]}</text>

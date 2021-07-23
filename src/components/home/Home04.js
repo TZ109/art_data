@@ -1,42 +1,51 @@
 /* eslint-disable */
 
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
+import ShowWindow6 from '../showWindow/ShowWindow6';
 import './Home.css'
 
+import  axios from 'axios';
+
 function Home4( ){
+    const [data, setdata] = useState(
+        [
+            {
+                artist:'',
+                artwork:'',
+                imgUrl:'',
+                moreUrl:''
+            }
+        ] 
+    );
+    useEffect(() => {
+        
+        axios.get("http://localhost:4000/api/home4/data").
+        then((res)=>{
+            console.log('받아온 것');
+            console.log(res.data);
+       // console.log(res.data)
+            setdata(res.data);
+            console.log('data');
+            console.log(data);
+        })
+        .catch(()=>{
+        alert('error');
+        });
+
+    },[])   
+    
     return(
         <div className="new_artwork">
             <p>New artwork</p>
             <div className="new_artwork_box">
                 <div className="new_first">
-                    <div className="new_art">
-                        <img src="/img/picture.png" alt="사진" />
-                        <p>Pablo Picasso :</p>
-                        <p>Girl</p>
-                        <div className="new_art_btn">
-                            <p>View more</p>
-                        </div>
-                    </div>
+                    {data[0].artist !='' ? <ShowWindow6 data={data[0]} /> : null}
                 </div>
                 <div className="new_second">
-                    <div className="new_art">
-                        <img src="/img/picture.png" alt="사진" />
-                        <p>Pablo Picasso :</p>
-                        <p>Girl</p>
-                        <div className="new_art_btn">
-                            <p>View more</p>
-                        </div>
-                    </div>
+                    {data[1] ? <ShowWindow6 data={data[1]} /> : null}
                 </div>
                 <div className="new_third">
-                    <div className="new_art">
-                        <img src="/img/picture.png" alt="사진" />
-                        <p>Pablo Picasso :</p>
-                        <p>Girl</p>
-                        <div className="new_art_btn">
-                            <p>View more</p>
-                        </div>
-                    </div>
+                    {data[2] ? <ShowWindow6 data={data[2]} /> : null}
                 </div>    
             </div>
             

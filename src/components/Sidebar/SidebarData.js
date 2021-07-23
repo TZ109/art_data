@@ -62,13 +62,7 @@ export const SidebarData = [
         title: 'Exhibition 3',
         path: '/exhibition3',
         icon: <BsIcons.BsCircleFill/>
-      }
-      ,
-      {
-        title: 'Exhibition 4',
-        path: '/exhibition4',
-        icon: <BsIcons.BsCircleFill/>
-      }
+      }     
     ]
   },
   {

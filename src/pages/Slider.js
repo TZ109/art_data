@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Slidercomponent01 from "./slider/slidercomponent01";
+import Slidercomponent01 from "../components/slider/slidercomponent01";
 
 export default class SimpleSlider2 extends Component {
   constructor(props) {
@@ -26,24 +26,7 @@ export default class SimpleSlider2 extends Component {
     return (
       <div>
         <Slider ref={c => (this.slider = c)} {...settings}>
-          <div>
-            <Slidercomponent01></Slidercomponent01>
-          </div>
-          <div>
-          <Slidercomponent01></Slidercomponent01>
-          </div>
-          <div>
-          <Slidercomponent01></Slidercomponent01>
-          </div>
-          <div>
-          <Slidercomponent01></Slidercomponent01>
-          </div>
-          <div>
-          <Slidercomponent01></Slidercomponent01>
-          </div>
-          <div>
-          <Slidercomponent01></Slidercomponent01>
-          </div>
+          {this.props.dataset && this.props.dataset.map( data => <div><Slidercomponent01 data={data}></Slidercomponent01></div>)}
         </Slider>
         <div>
           <button className="button1" onClick={this.previous}>

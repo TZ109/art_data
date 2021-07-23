@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 body{
     font-family: 'Raleway', sans-serif;
@@ -18,7 +18,7 @@ body{
 .show_window_flexbox2{
     position: absolute;
     top:226px;
-    left:305px;
+    left:285px;
     width: 1500px;
 
     display: flex;
@@ -41,7 +41,7 @@ body{
     border-radius: 15px 15px 15px 15px;
   }
   
-  .home_2_div img{
+  .home_2_div_img{
     position:absolute;
     top:75px;
     left:139px;
@@ -68,14 +68,13 @@ body{
   
   .home_2_textArea{
     position:absolute;
-    left:770px;
+    left:850px;
     top:452px;
-    width:900px;
+    width:580px;
     text-align: left;
+    font-size: 14px;
   }
-  .home_2_textArea p{
-    margin:0px;
-  }
+  
   
   .home_2_btn{
     position:absolute;

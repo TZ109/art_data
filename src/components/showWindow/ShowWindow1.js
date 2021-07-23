@@ -2,15 +2,17 @@
 import React,{useState} from 'react';
 import './ShowWindow.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-
+import Zoomimage from './Zoomimage';
 function ShowWindow1(props){
     return(
        <div className="show_window1">
-         <div><img src="/img/picture.png" alt="그림" /></div>
          <div>
-           <p className="artist_name1">Joan Miro : Joan</p>
-           <p className="day1">Mar 2 - Jul 21, 2021</p>
-           <p className="musium_name1">MoMA Museum</p>
+           <Zoomimage image={props.data.imgUrl} size='250'></Zoomimage>
+          </div>
+         <div>
+           <p className="artist_name1">{props.data.artist}</p>
+           <p className="day1">{props.data.day}</p>
+           <p className="musium_name1">{props.data.musium}</p>
          </div>
        </div>
     )

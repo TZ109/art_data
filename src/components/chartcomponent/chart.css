@@ -21,7 +21,11 @@
     top:534px;
     left:315px;
     font-size:18px;
-    margin:0px;
+    width:400px;
+    text-align: left;
+    margin-top:0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
     font-family:Noto Sans KR;
 }  
 

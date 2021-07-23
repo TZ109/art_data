@@ -5,41 +5,8 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LabelList, ResponsiveContainer } from 'recharts';
 import { RiStoreLine } from 'react-icons/ri';
 import XDataFormater from './XDataFormater';
-const data=[
-    {
-        name : `David Hockney : views of hotel well Ⅲ`,
-        '전시 관람 체류 시간' : 419,
-        '전시 관람객': 525
-    }
-,
-    {
-        name : `Joan miro : Fondation22 maeght`,
-        '전시 관람 체류 시간' : 347,
-        '전시 관람객': 289
-    }
-    ,
-    {
-        name : `Pablo Picasso : 3Portrait`,
-        '전시 관람 체류 시간' : 583,
-        '전시 관람객' : 436
-    }
-    ,                                  
-    {
-        name : `David Hoc5kney :
-        Views Of Hotel Well Ⅲ`,
-        '전시 관람 체류 시간' : 289,
-        '전시 관람객': 525
-    }
-,                    
-    {
-        name : `Joan miro : Fondatio4n maeght`,
-        '전시 관람 체류 시간' : 347,
-        '전시 관람객': 289
-    }
-    
-]
 
-function Chart02(){
+function Chart02(props){
     return(
         <div>
             <div className="graph_2_title">진행 중인 전시별 관람 정보</div>
@@ -47,7 +14,7 @@ function Chart02(){
         
                 <BarChart width={900}
                 height={550}
-                data={data}
+                data={props.data}
                 margin={{
                     top: 30,
                     right: 10,

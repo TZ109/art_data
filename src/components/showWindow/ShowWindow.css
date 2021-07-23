@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -10,28 +10,37 @@ body {
 .show_window1 {
     margin-right: 180px;
 }
-.show_window1 img {
-    width: 250px;
-    height: 348px;
-}
+
 
 .artist_name1 {
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width:250px;
     text-align: right;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .day1 {
     margin-top: 6px;
     margin-bottom: 0px;
     font-size: 11px;
+    width:250px;
     text-align: right;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .musium_name1 {
     margin-top: 0px;
     margin-bottom: 30px;
     font-size: 11px;
+    width:250px;
     text-align: right;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 
@@ -39,33 +48,41 @@ body {
 .show_window2 {
     position: relative;
     width: 475px;
-    height: 202px;
+    height: 200px;
     background-color: #191919;
     border-radius: 15px;
 }
 .show_window2 .show_window2_picture {
     position: absolute;
-    top: 22px;
-    left: 35px;
+    top: 20px;
+    left: 40px;
     width: 115px;
 }
 
 .total_name2 {
     position: absolute;
-    top: 22px;
-    left: 230px;
+    top: 20px;
+    left: 200px;
+    width:250px;
     text-align: left;
+    
 }
 .name2 {
     font-size: 24px;
     margin: 0px;
     color: white;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .musium_name2 {
     font-weight: lighter;
     color: white;
     font-size: 14px;
     margin-top: 0px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .plus_btn2{
     position: absolute;
@@ -73,12 +90,6 @@ body {
     left: 435px;
     width: 25px;
     height: 25px;
-}
-
-
-/* ShowWindow 3 */
-.show_window3 img {
-    width: 335px;
 }
 
 /* ShowWindow 4 */
@@ -92,8 +103,8 @@ body {
 }
 .show_window4_img {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 15px;
+    left: 15px;
     width: 94px;
     height: 124px;
 }
@@ -102,18 +113,25 @@ body {
     position: absolute;
     top: 60px;
     left: 125px;
+    width:120px;
 }
 .artist_name4 {
     text-align: left;
     font-size: 12px;
     margin: 0px;
     color: #F9F9F9;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .art_name4 {
     text-align: left;
     font-size: 12px;
     margin: 0px;
     color: #F9F9F9;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .musium_name4 {
     text-align: left;
@@ -121,6 +139,9 @@ body {
     font-weight: lighter;
     margin: 0px;
     color: #F9F9F9;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .plus_btn4 {
     position: absolute;
@@ -137,14 +158,15 @@ body {
     margin-right: 60px;
     margin-bottom: 60px;
 }
-.show_window_5 img {
-    width: 450px;
-}
+
 .show_window_5 p {
     width: 450px;
     font-size: 30px;
     text-align: right;
     margin-top: 10px;
     margin-bottom: 0px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
